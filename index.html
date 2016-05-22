@@ -1,14 +1,4 @@
 {# based on http://nodejs.org/api/documentation.html#documentation_stability_index #}
-{% macro stability(status) -%}
-<div class="stability">
-    <span class="meta-info-header">Stability</span><a href="#stability" class="{{ status }}">{{ status }}</a>
-</div>
-{%- endmacro %}
-{% macro depends(packages) -%}
-<div class="depends">
-    <span class="meta-info-header">Depends</span>{% for package in packages %}<a href={{ package[0] }} class="dependency">{{ package[1] }}</a>{% else %}<a href="#" class="no-dependency">None</a>{% endfor %}
-</div>
-{%- endmacro %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,13 +36,13 @@
     <script type="text/javascript" src="js/javascript.js"></script>
     <script type="text/javascript" src="js/showdown.js"></script>
     <script type="text/javascript" src="js/JSXTransformer.js"></script>
-    <title>React Components</title>
+    <title>Translations Deck</title>
 </head>
 
 <body>
     <div id="landing">
-        <h1>React Components</h1>
-        <h2>reusable components by <a href="http://www.khanacademy.org">Khan Academy</a></h2>
+        <h1>Translations Deck</h1>
+        <h2>Lesvos Refugee Camps</h2>
     </div>
 
     <section id="introduction">
